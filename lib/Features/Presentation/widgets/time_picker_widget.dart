@@ -1,3 +1,4 @@
+import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -8,17 +9,6 @@ class TimePickerWidget extends StatelessWidget {
     super.key,
     required this.controller,
   });
-
-  Future<void> _pickTime(BuildContext context) async {
-    TimeOfDay? pickedTime = await showTimePicker(
-      context: context,
-      initialTime: TimeOfDay.now(),
-    );
-    if (pickedTime != null) {
-      controller.text = pickedTime.format(context);
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -32,7 +22,7 @@ class TimePickerWidget extends StatelessWidget {
         suffixIcon: IconButton(
           icon: const Icon(FontAwesomeIcons.clock,
               color: Color(0xff5F33E1), size: 20),
-          onPressed: () => _pickTime(context),
+          onPressed: () => pickTime(context),
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
@@ -40,5 +30,32 @@ class TimePickerWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Future<void> pickTime(BuildContext context) async {
+    TimeOfDay? pickedTime = await showTimePicker(
+      context: context,
+      initialTime: TimeOfDay.now(),
+      builder: (context, child) {
+        return Theme(
+          data: ThemeData.light().copyWith(
+            primaryColor: AppColors.primaryColor,
+            colorScheme: ColorScheme.light(
+              primary: AppColors.primaryColor,
+              onSurface: Colors.black,
+            ),
+            buttonTheme: const ButtonThemeData(
+              textTheme: ButtonTextTheme.primary,
+            ),
+            dialogTheme: DialogThemeData(backgroundColor: Colors.white),
+          ),
+          child: child!,
+        );
+      },
+    );
+
+    if (pickedTime != null) {
+      controller.text = pickedTime.format(context);
+    }
   }
 }

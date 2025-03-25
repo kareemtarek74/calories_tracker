@@ -26,10 +26,13 @@ class AddMealScreenBody extends StatelessWidget {
           inAsyncCall: state is MealLoading,
           child: Scaffold(
             backgroundColor: Colors.white,
+            resizeToAvoidBottomInset: true,
             appBar: const AddMealAppBar(title: 'Add Meal'),
-            body: const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: AddMealForm(),
+            body: SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: AddMealForm(),
+              ),
             ),
           ),
         );

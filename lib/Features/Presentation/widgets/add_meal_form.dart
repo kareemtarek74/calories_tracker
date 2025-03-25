@@ -36,12 +36,20 @@ class _AddMealFormState extends State<AddMealForm> {
   Widget build(BuildContext context) {
     return Form(
       key: fprmKey,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: ListView(
+        shrinkWrap: true,
+        physics: const BouncingScrollPhysics(),
         children: [
+          SizedBox(
+            height: 16,
+          ),
           ImageSelectorWidget(
             image: image,
-            onImageSelected: (image) => setState(() => image = image),
+            onImageSelected: (File? selectedImage) {
+              setState(() {
+                image = selectedImage;
+              });
+            },
           ),
           const SizedBox(height: 16),
           CustomAddMealTextField(
@@ -56,6 +64,7 @@ class _AddMealFormState extends State<AddMealForm> {
             controller: _caloriesController,
             label: 'Calories',
             hintText: 'Enter calories...',
+            keyboardType: TextInputType.number,
           ),
           const SizedBox(height: 16),
           TimePickerWidget(controller: _timeController),

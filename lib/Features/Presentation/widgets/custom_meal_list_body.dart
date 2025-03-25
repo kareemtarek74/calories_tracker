@@ -3,9 +3,11 @@ import 'package:calories_tracker/Features/Presentation/cubits/Meal%20Cubit/meal_
 import 'package:calories_tracker/Features/Presentation/widgets/custom_error_widget.dart';
 import 'package:calories_tracker/Features/Presentation/widgets/custom_meal_list_view.dart';
 import 'package:calories_tracker/core/text_styles.dart';
+import 'package:calories_tracker/core/widgets/custom_empty_widget.dart';
 import 'package:calories_tracker/core/widgets/custom_progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomMealListBody extends StatelessWidget {
   final String filter;
@@ -27,6 +29,14 @@ class CustomMealListBody extends StatelessWidget {
             filteredMeals.sort((a, b) => a.calories.compareTo(b.calories));
           }
 
+          if (filteredMeals.isEmpty) {
+            return const CustomEmptyWidget(
+              icon: FontAwesomeIcons.utensils,
+              title: "No meals added yet!",
+              subtitle: "Tap the add button to start tracking your meals.",
+            );
+          }
+
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -46,7 +56,7 @@ class CustomMealListBody extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               SizedBox(
-                height: MediaQuery.sizeOf(context).height * .93,
+                height: MediaQuery.sizeOf(context).height * .9,
                 child: CustomMealListView(meals: filteredMeals),
               ),
             ],

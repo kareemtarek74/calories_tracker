@@ -8,7 +8,7 @@ class CustomAddMealTextField extends StatelessWidget {
   final int maxLines;
   final TextEditingController? controller;
   final AutovalidateMode? autovalidateMode;
-
+  final TextInputType? keyboardType;
   const CustomAddMealTextField({
     required this.autovalidateMode,
     required this.controller,
@@ -16,6 +16,7 @@ class CustomAddMealTextField extends StatelessWidget {
     required this.hintText,
     this.maxLines = 1,
     super.key,
+    this.keyboardType,
   });
 
   @override
@@ -37,6 +38,7 @@ class CustomAddMealTextField extends StatelessWidget {
           autovalidateMode: autovalidateMode,
           controller: controller,
           maxLines: maxLines,
+          keyboardType: keyboardType,
           decoration: InputDecoration(
             hintText: hintText,
             hintStyle: Styles.styleRegular14(context)
