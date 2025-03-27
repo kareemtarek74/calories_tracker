@@ -1,12 +1,12 @@
-import 'package:calories_tracker/Features/Meal%20DB/Data/data_sources/meal_db_local_data_source.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Data/data_sources/meal_db_remote_data_source.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Data/models/meal_db_models.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/Repos/meal_db_repository.dart';
-import 'package:calories_tracker/core/Errors/failure.dart';
-import 'package:calories_tracker/core/Errors/failure_handler.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Data/data_sources/meal_db_local_data_source.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Data/data_sources/meal_db_remote_data_source.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Data/models/meal_db_models.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/Repos/meal_db_repository.dart';
+import 'package:kareem_tarek/core/Errors/failure.dart';
+import 'package:kareem_tarek/core/Errors/failure_handler.dart';
 
 class MealDBRepositoryImpl implements MealDBRepository {
   final MealDBRemoteDataSource _remoteDataSource;

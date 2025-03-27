@@ -1,9 +1,9 @@
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_error_widget.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/details_body.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/meal_details_shimmer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_error_widget.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/details_body.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/meal_details_shimmer.dart';
 
 class MealDetailsScreenBody extends StatefulWidget {
   final String mealId;

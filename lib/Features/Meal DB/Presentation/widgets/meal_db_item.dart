@@ -1,5 +1,5 @@
-import 'package:calories_tracker/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
 
 class MealDBItem extends StatelessWidget {
   final MealDBEntity meal;

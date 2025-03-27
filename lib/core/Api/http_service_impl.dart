@@ -1,12 +1,12 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:calories_tracker/core/Api/http_service.dart';
-import 'package:calories_tracker/core/Api/http_service_helper.dart';
-import 'package:calories_tracker/core/Api/request_data.dart';
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
+import 'package:kareem_tarek/core/Api/http_service.dart';
+import 'package:kareem_tarek/core/Api/http_service_helper.dart';
+import 'package:kareem_tarek/core/Api/request_data.dart';
 
 import '../../../injection_container.dart';
 

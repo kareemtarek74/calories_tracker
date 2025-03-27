@@ -1,7 +1,7 @@
-import 'package:calories_tracker/Features/Local%20Meals/Data/models/meal_model.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Repos/meal_repository.dart';
 import 'package:hive/hive.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Data/models/meal_model.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Repos/meal_repository.dart';
 
 class MealRepositoryImpl implements MealRepository {
   final Box<Meal> mealsBox = Hive.box<Meal>('meals');

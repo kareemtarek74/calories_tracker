@@ -1,6 +1,6 @@
-import 'package:calories_tracker/Features/Meal%20DB/Data/models/meal_db_models.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
 import 'package:hive/hive.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Data/models/meal_db_models.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
 
 abstract class MealDBLocalDataSource {
   Future<void> cacheCategories(List<MealDBCategory> categories);

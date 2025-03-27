@@ -1,6 +1,6 @@
-import 'package:calories_tracker/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
-import 'package:calories_tracker/core/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
+import 'package:kareem_tarek/core/text_styles.dart';
 
 class DetailsBody extends StatelessWidget {
   const DetailsBody({

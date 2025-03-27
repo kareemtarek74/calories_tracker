@@ -1,7 +1,7 @@
-import 'package:calories_tracker/core/Api/api_consumer.dart';
-import 'package:calories_tracker/core/Api/http_service.dart';
-import 'package:calories_tracker/core/Api/request_data.dart';
 import 'package:dio/dio.dart';
+import 'package:kareem_tarek/core/Api/api_consumer.dart';
+import 'package:kareem_tarek/core/Api/http_service.dart';
+import 'package:kareem_tarek/core/Api/request_data.dart';
 
 class ApiConsumerImpl implements ApiConsumer {
   final HttpService httpService;

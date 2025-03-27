@@ -1,6 +1,6 @@
-import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
 
 class CustomProgressIndicator extends StatelessWidget {
   const CustomProgressIndicator({super.key});

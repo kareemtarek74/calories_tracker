@@ -1,16 +1,16 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Data/models/meal_db_models.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/UseCases/get_categories_use_case.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/UseCases/get_meal_details_use_case.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/UseCases/get_meals_by_category_use_case.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Domain/UseCases/search_meals_use_case.dart';
-import 'package:calories_tracker/core/Errors/failure.dart';
-import 'package:calories_tracker/injection_container.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Data/models/meal_db_models.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/Entity/meal_db_entity.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/UseCases/get_categories_use_case.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/UseCases/get_meal_details_use_case.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/UseCases/get_meals_by_category_use_case.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Domain/UseCases/search_meals_use_case.dart';
+import 'package:kareem_tarek/core/Errors/failure.dart';
+import 'package:kareem_tarek/injection_container.dart';
 
 part 'meal_db_state.dart';
 

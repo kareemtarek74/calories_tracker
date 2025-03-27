@@ -1,14 +1,14 @@
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_error_widget.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/screens/meal_details_screen.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/empty_search_result_widget.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/meal_db_item.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/meal_shimmer_item.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/search_initial_widget.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/search_meals_app_bar.dart';
-import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_error_widget.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/screens/meal_details_screen.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/empty_search_result_widget.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/meal_db_item.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/meal_shimmer_item.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/search_initial_widget.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/search_meals_app_bar.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
 
 class MealSearchScreenBody extends StatefulWidget {
   const MealSearchScreenBody({super.key});

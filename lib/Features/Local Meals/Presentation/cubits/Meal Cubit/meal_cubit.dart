@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Repos/meal_repository.dart';
 import 'package:equatable/equatable.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Repos/meal_repository.dart';
 
 part 'meal_state.dart';
 

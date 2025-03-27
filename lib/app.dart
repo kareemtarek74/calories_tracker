@@ -1,9 +1,9 @@
-import 'package:calories_tracker/Features/Main/presentation/views/main_view.dart';
-import 'package:calories_tracker/config/locale/app_localizations_setup.dart';
-import 'package:calories_tracker/core/helper_functions/on_generate_function.dart';
-import 'package:calories_tracker/core/utils/app_colors.dart';
-import 'package:calories_tracker/core/widgets/app_wrapper.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Main/presentation/views/main_view.dart';
+import 'package:kareem_tarek/config/locale/app_localizations_setup.dart';
+import 'package:kareem_tarek/core/helper_functions/on_generate_function.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
+import 'package:kareem_tarek/core/widgets/app_wrapper.dart';
 
 class CaloriesTracker extends StatelessWidget {
   const CaloriesTracker({super.key});

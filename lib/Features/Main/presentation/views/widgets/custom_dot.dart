@@ -1,5 +1,5 @@
-import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
 
 class CustomDot extends StatelessWidget {
   const CustomDot({super.key, required this.isActive});

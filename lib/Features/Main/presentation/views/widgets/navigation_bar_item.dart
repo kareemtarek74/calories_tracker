@@ -1,5 +1,5 @@
-import 'package:calories_tracker/Features/Main/Domain/Entities/buttom_vavigation_bar_entity.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Main/Domain/Entities/buttom_vavigation_bar_entity.dart';
 
 class NavigationBarItem extends StatelessWidget {
   const NavigationBarItem({

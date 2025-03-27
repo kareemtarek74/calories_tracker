@@ -1,7 +1,7 @@
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/meal_image.dart';
-import 'package:calories_tracker/core/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/meal_image.dart';
+import 'package:kareem_tarek/core/text_styles.dart';
 
 class CustomMealItem extends StatelessWidget {
   final MealEntity meal;

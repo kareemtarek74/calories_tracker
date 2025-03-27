@@ -1,9 +1,9 @@
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/screens/meal_details_screen.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/meal_db_item.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/meal_shimmer_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/screens/meal_details_screen.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/meal_db_item.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/meal_shimmer_item.dart';
 
 class CategoryMealsScreenBody extends StatefulWidget {
   final String category;

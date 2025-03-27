@@ -1,8 +1,8 @@
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/add_meal_floating_action_button.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_meal_list_body.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/meal_list_app_bar.dart';
-import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/add_meal_floating_action_button.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_meal_list_body.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/meal_list_app_bar.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
 
 class MealListScreenBody extends StatefulWidget {
   const MealListScreenBody({super.key});

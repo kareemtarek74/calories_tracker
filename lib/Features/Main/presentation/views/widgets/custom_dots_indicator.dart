@@ -1,5 +1,5 @@
-import 'package:calories_tracker/Features/Main/presentation/views/widgets/custom_dot.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Main/presentation/views/widgets/custom_dot.dart';
 
 class CustomDotsIndicator extends StatelessWidget {
   const CustomDotsIndicator(

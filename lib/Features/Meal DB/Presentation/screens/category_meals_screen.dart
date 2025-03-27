@@ -1,7 +1,7 @@
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/widgets/category_meals_screen_body.dart';
-import 'package:calories_tracker/core/text_styles.dart';
-import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/widgets/category_meals_screen_body.dart';
+import 'package:kareem_tarek/core/text_styles.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
   const CategoryMealsScreen({super.key, required this.category});

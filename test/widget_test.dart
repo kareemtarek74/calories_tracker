@@ -1,10 +1,10 @@
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_meal_list_body.dart';
-import 'package:calories_tracker/core/widgets/custom_empty_widget.dart';
-import 'package:calories_tracker/injection_container.dart' as di;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_meal_list_body.dart';
+import 'package:kareem_tarek/core/widgets/custom_empty_widget.dart';
+import 'package:kareem_tarek/injection_container.dart' as di;
 
 void main() {
   setUp(() {

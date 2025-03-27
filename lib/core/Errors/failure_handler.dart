@@ -1,5 +1,5 @@
-import 'package:calories_tracker/core/Errors/failure.dart';
 import 'package:dio/dio.dart';
+import 'package:kareem_tarek/core/Errors/failure.dart';
 
 class FailureHandler {
   Failure handle(dynamic error) {

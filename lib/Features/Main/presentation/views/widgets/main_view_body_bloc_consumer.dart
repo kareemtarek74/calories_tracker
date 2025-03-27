@@ -1,8 +1,8 @@
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
-import 'package:calories_tracker/Features/Main/presentation/views/widgets/main_view_body.dart';
-import 'package:calories_tracker/injection_container.dart' as di;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
+import 'package:kareem_tarek/Features/Main/presentation/views/widgets/main_view_body.dart';
+import 'package:kareem_tarek/injection_container.dart' as di;
 
 class MainViewBodyBlocConsumer extends StatelessWidget {
   const MainViewBodyBlocConsumer({

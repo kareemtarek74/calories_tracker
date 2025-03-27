@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import 'package:calories_tracker/injection_container.dart';
 import 'package:dio/dio.dart';
+import 'package:kareem_tarek/injection_container.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 class HttpServiceHelper {

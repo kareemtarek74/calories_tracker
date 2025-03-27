@@ -1,5 +1,5 @@
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
 import 'package:hive/hive.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
 
 part 'meal_model.g.dart';
 

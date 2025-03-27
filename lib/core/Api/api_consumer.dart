@@ -1,5 +1,5 @@
-import 'package:calories_tracker/core/Api/request_data.dart';
 import 'package:dio/dio.dart';
+import 'package:kareem_tarek/core/Api/request_data.dart';
 
 abstract class ApiConsumer {
   Future<Response> get(String path, {RequestData? requestData});

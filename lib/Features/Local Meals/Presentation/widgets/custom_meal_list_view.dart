@@ -1,8 +1,8 @@
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_meal_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_meal_item.dart';
 
 class CustomMealListView extends StatelessWidget {
   final List<MealEntity> meals;

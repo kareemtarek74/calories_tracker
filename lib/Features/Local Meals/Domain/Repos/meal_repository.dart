@@ -1,4 +1,4 @@
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
 
 abstract class MealRepository {
   Future<List<MealEntity>> getMeals({int offset, int limit});

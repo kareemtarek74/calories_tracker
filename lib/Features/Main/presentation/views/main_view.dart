@@ -1,8 +1,8 @@
-import 'package:calories_tracker/Features/Main/presentation/views/widgets/custom_navigation_bar.dart';
-import 'package:calories_tracker/Features/Main/presentation/views/widgets/main_view_body_bloc_consumer.dart';
-import 'package:calories_tracker/injection_container.dart' as di;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Main/presentation/views/widgets/custom_navigation_bar.dart';
+import 'package:kareem_tarek/Features/Main/presentation/views/widgets/main_view_body_bloc_consumer.dart';
+import 'package:kareem_tarek/injection_container.dart' as di;
 
 import '../cubits/buttom_navigation_cubit.dart';
 

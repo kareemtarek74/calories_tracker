@@ -1,13 +1,13 @@
-import 'package:calories_tracker/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_error_widget.dart';
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/widgets/custom_meal_list_view.dart';
-import 'package:calories_tracker/core/text_styles.dart';
-import 'package:calories_tracker/core/widgets/custom_empty_widget.dart';
-import 'package:calories_tracker/core/widgets/custom_progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Domain/Entities/meal_entity.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/cubits/Meal%20Cubit/meal_cubit.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_error_widget.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/widgets/custom_meal_list_view.dart';
+import 'package:kareem_tarek/core/text_styles.dart';
+import 'package:kareem_tarek/core/widgets/custom_empty_widget.dart';
+import 'package:kareem_tarek/core/widgets/custom_progress_indicator.dart';
 
 class CustomMealListBody extends StatelessWidget {
   final String filter;

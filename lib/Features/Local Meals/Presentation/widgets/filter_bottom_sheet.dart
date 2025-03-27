@@ -1,5 +1,5 @@
-import 'package:calories_tracker/core/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/core/text_styles.dart';
 
 class FilterBottomSheet extends StatelessWidget {
   final void Function(String) onFilterSelected;

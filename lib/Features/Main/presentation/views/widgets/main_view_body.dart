@@ -1,9 +1,9 @@
-import 'package:calories_tracker/Features/Local%20Meals/Presentation/screens/meal_list_screen.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/screens/categories_screen.dart';
-import 'package:calories_tracker/Features/Meal%20DB/Presentation/screens/meal_search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kareem_tarek/Features/Local%20Meals/Presentation/screens/meal_list_screen.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/cubit/meal_db_cubit.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/screens/categories_screen.dart';
+import 'package:kareem_tarek/Features/Meal%20DB/Presentation/screens/meal_search_screen.dart';
 
 class MainViewBody extends StatelessWidget {
   const MainViewBody({

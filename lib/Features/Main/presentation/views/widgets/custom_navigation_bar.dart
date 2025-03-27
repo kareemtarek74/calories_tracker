@@ -1,6 +1,6 @@
-import 'package:calories_tracker/Features/Main/Domain/Entities/buttom_vavigation_bar_entity.dart';
-import 'package:calories_tracker/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:kareem_tarek/Features/Main/Domain/Entities/buttom_vavigation_bar_entity.dart';
+import 'package:kareem_tarek/core/utils/app_colors.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final Function(int) onItemTapped;
