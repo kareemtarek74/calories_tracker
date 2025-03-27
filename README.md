@@ -1,74 +1,97 @@
-# Calories Tracker App
+# Kareem Tarek – Calories Tracker App
 
 ## 📌 Overview
-A simple meal tracking app that allows users to add, view, sort, and delete meals. The app keeps track of total daily calories and stores data locally.
+A modern and user-friendly meal tracking app that allows users to add, view, search, sort, and delete meals. The app integrates with [TheMealDB API](https://www.themealdb.com/api.php) and includes a sleek bottom navigation bar for intuitive navigation between different features.
+
+## 🌟 What's New?
+- ✅ Completely revamped **UI/UX** for a modern and smooth experience
+- ✅ Introduced a **Bottom Navigation Bar** to navigate easily between:
+  - Local Meals
+  - Meal Search (API)
+  - Meal Categories (API)
+- ✅ Smooth transitions and better state handling
+- ✅ Enhanced empty/error/loading states with friendly visuals
 
 ## 🔧 Tech Stack
 - **Framework:** Flutter
 - **State Management:** Flutter Bloc
 - **Local Storage:** Hive
+- **Networking:** Dio
 - **Language:** Dart
 
 ## 📜 Features
+
+### 🔸 Local Meal Tracking
 - Add a meal (name, calories, time, photo)
-- Display meals in a list with total calories per day
+- View daily meals with total calorie count
 - Sort meals by name, calories, or time
-- Delete a meal entry
-- Persist data locally using Hive
+- Delete meal entries
+- Store meals locally using Hive
+
+### 🔸 TheMealDB API Integration
+- Search meals by name (`/api/json/v1/1/search.php?s=`)
+- View meal details including ingredients, area, instructions, etc.
+- Filter meals by category (`/api/json/v1/1/filter.php?c=`)
+- View all available categories
+
+### 🔸 UI/UX Enhancements
+- Beautiful and clean UI design
+- Shimmer loading effects for better UX
+- Friendly empty states and retryable error widgets
+- Bottom Navigation for better feature organization
+- Dark/light-friendly color contrast
 
 ## 🛠 Installation & Running the App
 
 ### Prerequisites
-- Install Flutter: [Flutter Installation Guide](https://docs.flutter.dev/get-started/install)
-- Ensure you have an emulator or a connected physical device
+- Flutter SDK: [Installation Guide](https://docs.flutter.dev/get-started/install)
+- Android Studio or VS Code
+- Emulator or physical device
 
 ### Steps
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/kareemtarek74/calories_tracker
-   cd meal_tracker_app
-   ```
-2. Install dependencies:
-   ```sh
-   flutter pub get
-   ```
-3. Run the app:
-   ```sh
-   flutter run
-   ```
+```bash
+git clone https://github.com/kareemtarek74/calories_tracker
+cd calories_tracker
+flutter pub get
+flutter run
+```
 
 ## 📱 APK Download
-You can download and install the APK from the following link:
-https://drive.google.com/file/d/1sVqbCcoqhP9WeThGGUmfBYGAO0oV6D0a/view?usp=sharing
+Installable APK:  
+🔗 https://drive.google.com/file/d/19H1ppR5DKKStf-6cGb219YCIJvmhuRJi/view?usp=sharing
 
 ## 📏 Responsiveness Approach
-- Utilized `MediaQuery` and `Flexible` widgets for adaptive layouts
-- Used `ListView.builder` for scalable UI components
-- Tested across different screen sizes and orientations
+- Used `MediaQuery`, `Expanded`, and `Flexible` for adaptive layouts
+- Responsive UI across screen sizes and orientations
+- Scrollable content to handle overflow elegantly
 
 ## 📂 Project Structure
+
 ```
-meal_tracker_app/
-│── lib/
-│   │── Features/
-│   │   ├── Data/ (Local storage models)
-│   │   ├── Domain/ (Entities & use cases)
-│   │   ├── Presentation/ (UI & Cubits)
-│   │── core/ (Shared utilities & styles)
-│   ├── main.dart
-│── test/ (Unit & widget tests)
-│── pubspec.yaml (Dependencies)
-│── README.md
+calories_tracker/
+├── lib/
+│   ├── Features/
+│   │   ├── Local Meals/
+│   │   ├── Meal DB/
+│   │   └── Main/
+│   ├── core/
+│   ├── injection_container.dart
+│   └── main.dart
+├── assets/
+├── test/
+└── pubspec.yaml
 ```
 
-## 📌 Notes
-- The app is built with clean architecture to separate concerns
-- Uses `flutter_bloc` for state management
-- Stores meals locally using Hive for fast retrieval
+## 💡 Notes
+- Built using Clean Architecture (Data → Domain → Presentation)
+- Bloc/Cubit used for state management
+- Modularized UI for reusability and readability
+- Meals and categories cached with Hive for performance
 
 ---
+
 ### 📧 Contact
-If you have any questions, feel free to reach out!
+If you have any questions or feedback, feel free to reach out:
 
-📩 Email: Kareemtarek015@gmail.com
-
+📩 **Email**: Kareemtarek015@gmail.com  
+📱 **Phone**: +201275603507
